@@ -1,0 +1,292 @@
+*{
+    font-family: Okra, Helvetica;
+}
+
+nav{
+    background-color:white;
+    top: 0px;
+    position: sticky;
+    z-index: 2;
+}
+.vertical-line{
+    border-left: 1px solid #f2f2f2;
+    height: 75px;
+}
+
+.nav-delivery>h6{
+    font-weight: 900;
+}
+
+.nav-delivery>p{
+    font-size: 13px;
+}
+
+.my-nav-search{
+    background-color:#f8f8f8;
+    border-radius: 10px;
+    border: 1px solid #f2f2f2;
+    padding-inline: 10px;
+}
+
+.my-nav-search>input{
+    border: none;
+    width: 35vw;
+    height: 50px;
+    background-color: transparent;
+}
+
+.cart{
+    background-color:#0c831f !important;
+    border-radius: 10px !important;
+    font-weight: 600 !important;
+}
+
+#categories-1{
+    display: flex;
+    width: 100vw;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    padding-inline: 3vw;
+    margin: auto;
+}
+
+.scroll-container{
+    width: 91vw;
+    margin: auto;
+}
+
+.list{
+    white-space: nowrap;
+    overflow-x:scroll;
+    overflow-y: scroll;
+}
+
+
+.list>img{
+    display: inline-block;
+    margin:10px;
+}
+
+.category{
+    width: 91vw;
+    margin: auto;
+    margin-bottom: 20px;
+}
+
+.my-card{
+    display: inline-block !important;
+    width: 200px;
+    box-sizing: border-box;
+    border-radius: 15px !important;
+    white-space: wrap;
+    margin-inline: 10px;
+}
+.my-card>img{
+    margin-top: 2px;
+    display: inline-block;
+    /* margin: auto; */
+}
+
+.time{
+    background-color: #f2f2f2;
+    font-weight: 700;
+    font-size: 9px;
+    color: rgb(54, 54, 54);
+    width: fit-content;
+    padding: 3px;
+    border-radius: 5px;
+}
+
+.product__weight{
+    font-size: 13px;
+    color: #666666;
+}
+
+.row-3>p{
+    margin:0px;
+}
+
+.zig-zag{
+    position: relative;
+    bottom: 9px;
+    font-size: 16px;
+    color: #538cee;
+}
+
+.my-tag{
+    position: absolute;
+    top: 0px;
+    left: 20px;
+    width:40px;
+    height: 40px;
+    background-color: #538cee;
+    color:white;
+    font-weight: 900;
+    font-size: 13px; 
+    text-align: center;
+    justify-content: center;
+}
+
+footer{
+    width: 85vw;
+    margin: auto;
+}
+
+#my-footer-row-3{
+    text-align: justify;
+    font-size: 13px;
+    color: #666666;
+}
+
+#my-footer-row-2{
+    font-size: 13px;
+    text-align: justify;
+    color: #666666;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    display: flex;
+}
+
+#footer_row_2_col1{
+    font-size: 10px;
+    flex: 1;
+    color: #666666;
+    padding-right: 30px;
+}
+
+#footer_row_2_col2{
+    flex: 1;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+#footer_row_2_col2>h6{
+    color: #666666;
+    font-size: 13px;
+    font-weight: 700;
+}
+
+#footer_row_2_col3{
+    padding-left: 100px;
+    flex: 1;
+    display: flex;
+    justify-content: space-between;
+}
+
+.social-icon{
+    width: 35px;
+    height: 35px;
+    background-color: #1f1f1f;
+    color: white;
+    display: flex;
+    font-size: 25px;
+    border-radius: 50%;
+    align-items: center;
+    justify-content: center;
+    margin: auto;
+}
+
+.social-icon:hover{
+    background-color: greenyellow;
+    box-shadow: 5px 5px black;
+}
+
+#my-footer-row-1{
+    display: flex;
+    margin-top: 30px;
+}
+
+#footer_table_1{
+    flex:2;
+    width: 100%;
+}
+
+#footer_table_2{
+    flex: 3;
+}
+
+table{
+    width: 100%;
+}
+
+
+td{
+    color: #666666;
+    line-height: 30px;
+}
+
+
+td:hover{
+    line-height: 30px;
+    text-decoration: underline;
+    cursor: pointer;
+    color: red;
+}
+
+#end{
+    margin-top: 40px;
+    text-align: center;
+}
+
+@media screen and (max-width:480px){
+    #hero-section{
+        display: none !important;
+    }
+
+    #my-footer-row-1{
+        flex-direction: column !important;
+        align-items: center;
+        margin: auto;
+    }
+
+    #footer_table_1, #footer_table_2, #my-footer-row-2, nav{
+        display: flex;
+        flex-direction: column !important;
+        align-items: center;
+    }
+
+    td{
+        padding-inline: 12px;
+        text-align: center;
+    }
+
+    #footer_row_2_col1{
+        text-align: center;
+    }
+
+    #footer_row_2_col2{
+        justify-content: space-between;
+        width: 70vw;
+    }
+
+    #footer_row_2_col3{
+        justify-content: space-between;
+        width: 90vw;
+        margin: auto;
+        margin-top: 10px;
+        padding-left: 0px;
+    }
+
+    #footer_table_1{
+        margin-bottom: 30px;
+    }
+
+    #footer_table_2>h5>span{
+        margin-left: 100px;
+    }
+
+    .vertical-line, h6, p{
+        display: none;
+    }
+
+    nav{
+        padding-top: 20px;
+        padding-bottom: 20px;
+        position: static;
+    }
+
+    .my-nav-search{
+        width: 90vw;
+    }
+}
